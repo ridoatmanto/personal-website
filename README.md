@@ -1,6 +1,7 @@
 # Rido's Personal Website
 Hi, I'am Rido, **Software Engineer**.
-Build your Web App into the world. At least MVP Version to make your dream com true.
+
+Build your Web App into the real world. At least MVP Version to make your dream come true.
 
 ## Skills provided
 1. HTML
