@@ -1,64 +1,210 @@
-main {
-    margin: 0 auto;
-    max-width: 1100px;
-    background-color: #FFF;
-}
+@media (min-width: 745px) {
+    main {
+        max-width: 1100px;
+        display: block;
+        margin: auto;
+        padding-top: 32px;
+    }
 
-header {
-    overflow: hidden;
-    min-height: 56px;
-    margin-top: 56px;
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header h2 {
+        font-size: 32px;
+    }
 
     .left-header {
-        float: left;
-        width: 50%;
-        font-size: 32px;
-        padding-top: 15px;
-    }
-
-    nav {
-        float: right;
-        width: 50%;
-    }
-
-
-    nav ul {
-        list-style: none;
-        float: right;
-    }
-
-    nav ul li {
-        float: left;
-        margin-right: 4px;
+        flex: 50%
     }
 
     nav ul li a {
-        text-decoration: none;
-        font-size: 22px;
         padding: 16px 40px;
-        color: #000;
+        font-size: 22px;
     }
 
-    nav ul li a.active,
-    nav ul li a:hover {
-        color: white;
-        font-style: bold;
-        background-color: #000;
+    .content .title {
+        font-size: 36px;
     }
 
+    .content p {
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .banner {
+        margin-bottom: 32px;
+    }
+
+    .widget-container {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .widget p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    footer p {
+        display: inline;
+        float: right;
+        margin-top: 4px;
+    }
+
+    footer a {
+        text-align: left;
+    }
 }
 
+/* iPad Mini 8.3 744x1133 */
+@media (max-width: 744px) {
+    .left-header {
+        width: 100%;
+        text-align: center;
+    }
 
-.content {
-    padding: 87px 0 50px;
-    font-size: 24px;
-    line-height: 38px;
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 28px;
+    }
+
+    nav ul li a {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .banner {
+        height: 200px;
+        margin-bottom: 16px;
+    }
+
+    .banner img {
+        margin-left: -140px;
+    }
+
+    .content .title {
+        font-size: 22px;
+    }
+
+    .content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .widget-container {
+        grid-template-columns: 50% 50%;
+    }
+
+    .widget-container .full-widget {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .widget p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+body {
+    background-color: #E5E5E5;
+    padding: 16px;
+}
+
+main {
+    background-color: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+}
+
+header h2 {
+    display: inline-block;
+    margin: 16px 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #E5E5E5;
+    font-style: bold;
+    background-color: #000;
+}
+
+.content .title {
+    text-align: center;
+}
+
+.content .bold {
+    font-weight: bold;
+}
+
+.banner {
+    overflow: hidden;
+}
+
+.widget-container {
+    display: grid;
+    text-align: center;
+}
+
+.widget-container .widget {
+    /* max-height: 100px; */
+    padding: 16px;
+    background-color: #E5E5E5;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    border-radius: 8px;
+}
+
+.widget h3 {
+    margin: 8px 0 0px;
+}
+
+.widget p {
+    margin: 8px 0 0px;
 }
 
 footer {
-    text-align: center;
-    padding: 30px 0;
-    border-top: 4px dashed #BCBCBC;
+    padding-top: 16px;
+    border-top: 2px dashed #BCBCBC;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0 20px;
+    line-height: 32px;
+    color: #464646;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 
