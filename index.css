@@ -263,6 +263,12 @@ nav ul li a:hover {
     padding-bottom: 16px;
 }
 
+.contact-submit {
+    padding: 8px 20px;
+    background-color: D9D9D9;
+    font-weight: bold;
+}
+
 footer {
     padding-top: 16px;
     border-top: 2px dashed #BCBCBC;
