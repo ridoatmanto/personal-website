@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rido Atmanto | Personal's Website</title>
-    <link rel="stylesheet" href="/index.css" />
+    <!-- <link rel="stylesheet" href="/index.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,30 +14,55 @@
     />
   </head>
 
-  <body>
-    <main>
-      <header>
-        <div class="left-header roboto-bold">
-          <img src="/images/rido-logo.png" alt="Rido's logo" />
-          <h2>Rido Atmanto</h2>
+  <body class="flex justify-center items-center px-4 py-4 bg-[#E5E5E5]">
+    <main class="px-4 py-4 bg-white rounded-lg max-w-screen-lg">
+      <div class="grid grid-cols-2 gap-4 lg:pt-8 pt-4 lg:pb-12 pb-6">
+        <div class="lg:col-span-1 col-span-2 lg:text-left text-center">
+          <img
+            src="/images/rido-logo.png"
+            alt="Rido's logo"
+            class="inline-block -mt-4"
+          />
+          <h1 class="text-3xl font-bold inline-block">Rido Atmanto</h1>
         </div>
-        <nav class="menu">
-          <ul>
-            <li><a href="/" class="active roboto-bold">Home</a></li>
-            <li><a href="/portfolio" class="roboto-bold">Portfolio</a></li>
-            <li><a href="/contact" class="roboto-bold">Contact</a></li>
+        <div class="lg:col-span-1 col-span-2 lg:pt-0 pt-4">
+          <ul class="flex lg:justify-end justify-center">
+            <li class="mr-1">
+              <a
+                href="/"
+                class="roboto-bold font-bold lg:px-8 px-4 lg:py-4 py-2 text-lg text-slate-300 bg-black hover:bg-white hover:text-black"
+                >Home</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                href="/portfolio"
+                class="roboto-bold font-bold lg:px-8 px-4 lg:py-4 py-2 text-lg text-black bg-transparent hover:bg-black hover:text-slate-300"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                href="/contact"
+                class="roboto-bold font-bold lg:px-8 px-4 lg:py-4 py-2 text-lg text-black bg-transparent hover:bg-black hover:text-slate-300"
+                >Contact</a
+              >
+            </li>
           </ul>
-        </nav>
+        </div>
+      </div>
+      <header>
+        <div class="left-header roboto-bold"></div>
+        <nav class="menu"></nav>
       </header>
       <div class="content roboto-regular">
-        <p class="title">
-          Hi there, I’m Rido! I’m <span class="bold">Software Engineer</span>.
-          Can I help you?
-        </p>
-        <div class="banner">
+        <h2 class="lg:text-3xl text-lg roboto-regular text-center lg:mb-8 mb-4">
+          Hi there, I’m Rido! I’m <b>Software Engineer</b>. Can I help you?
+        </h2>
+        <div class="overflow-hidden mb-8">
           <img src="/images/rido-home-banner.png" alt="rido's home banner" />
         </div>
-        <p class="roboto-regular">
+        <p class="roboto-regular text-lg mb-4">
           Love to build stuff in Web Development. Making any Web Application you
           need from top into down area. Experience in many kind of Web App and
           client request needs. Don’t know what to kind of app you want? Take it
@@ -44,68 +70,88 @@
           easy quick win, then iterate several times. Surprise! You dreamed App
           has born for real.
         </p>
-        <p class="roboto-regular">
+        <p class="roboto-regular text-lg mb-4">
           Build Web Application stuff using HTML, CSS, JavaScript, Figma, VS
           Code, Github, and more. If you need advance application, company
           profile, or just simple app which make your life better. The last is
           my lovely task to do. Giving solution for your real life problem.
         </p>
-        <p class="roboto-regular">
+        <p class="roboto-regular text-lg mb-4">
           Don’t hesitate to contacts me via <b>Telegram</b>
-          <a href="https://t.me/ridoatmanto">t.me/ridoatmanto</a> or
+          <a href="https://t.me/ridoatmanto" class="text-sky-400"
+            >t.me/ridoatmanto</a
+          >
+          or
           <b>Github</b>
-          <a href="https:/github.com/ridoatmanto">github.com/ridoatmanto</a>.
+          <a href="https:/github.com/ridoatmanto" class="text-sky-400"
+            >github.com/ridoatmanto</a
+          >.
         </p>
-        <div class="widget-container">
-          <div class="widget">
-            <img src="images/discuss.png" alt="Discuss icon's" />
-            <h3>Discuss your idea first</h3>
-            <p>
+        <div
+          class="grid lg:grid-cols-3 grid-cols-2 gap-4 pt-8 lg:pb-12 pb-4 text-center"
+        >
+          <div
+            class="lg:col-span-1 col-span-1 bg-[#E5E5E5] px-4 py-4 rounded-lg"
+          >
+            <div class="flex justify-center items-center mb-4">
+              <img src="images/discuss.png" alt="Discuss icon's" />
+            </div>
+            <h3 class="font-bold">Discuss your idea first</h3>
+            <p class="text-sm">
               Tell anything you wish to make. No underestimated. Set quick win
               together at first.
             </p>
           </div>
-          <div class="widget">
-            <img src="images/mvp.png" alt="MVP icon's" />
-            <h3>Discuss your idea first</h3>
-            <p>
-              Tell anything you wish to make. No underestimated. Set quick win
-              together at first.
+          <div
+            class="lg:col-span-1 col-span-1 bg-[#E5E5E5] px-4 py-4 rounded-lg"
+          >
+            <div class="flex justify-center items-center mb-4">
+              <img src="images/mvp.png" alt="MVP icon's" />
+            </div>
+            <h3 class="font-bold">Make Your MVP Product</h3>
+            <p class="text-sm">
+              MVP first mindset for deliver your main idea. Customize then for
+              perfection.
             </p>
           </div>
-          <div class="widget full-widget">
-            <img src="images/launch.png" alt="Launch icon's" />
-            <h3>Discuss your idea first</h3>
-            <p>
-              Tell anything you wish to make. No underestimated. Set quick win
-              together at first.
+          <div
+            class="lg:col-span-1 col-span-2 bg-[#E5E5E5] px-4 py-4 rounded-lg"
+          >
+            <div class="flex justify-center items-center mb-4">
+              <img src="images/launch.png" alt="Launch icon's" />
+            </div>
+            <h3 class="font-bold">Bring to the world</h3>
+            <p class="text-sm">
+              Access your web app anywhere and anytime. 24 hours non stop.
             </p>
           </div>
         </div>
       </div>
-      <footer class="roboto-regular">
-        <a href="/" class="active roboto-bold">Home</a>
+      <footer
+        class="roboto-regular border-dashed border-t-2 pt-4 lg:text-left text-center"
+      >
+        <a href="/" class="roboto-bold font-bold px-4">Home</a>
         <a
           href="https://t.me/ridoatmanto"
           target="_blank"
-          class="active roboto-bold"
+          class="active roboto-bold font-bold px-4"
           >Telegram</a
         >
         <a
           href="https://www.linkedin.com/in/rido-sandi-atmanto/"
           target="_blank"
-          class="roboto-bold"
+          class="roboto-bold font-bold px-4"
           >LinkedIn</a
         >
         <a
           href="https://github.com/ridoatmanto"
           target="_blank"
-          class="roboto-bold"
+          class="roboto-bold font-bold px-4"
           >Github</a
         >
-        <a href="/portfolio" class="roboto-bold">Portfolio</a>
-        <a href="/contact" class="roboto-bold">Contact</a>
-        <p>Rido Atmanto &copy; 2024</p>
+        <a href="/portfolio" class="roboto-bold font-bold px-4">Portfolio</a>
+        <a href="/contact" class="roboto-bold font-bold px-4">Contact</a>
+        <p class="inline-block lg:float-right px-4">Rido Atmanto &copy; 2024</p>
       </footer>
     </main>
   </body>
