@@ -3,99 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Rido Atmanto</title>
+    <title>Rido Atmanto | Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;&display=swap"
       rel="stylesheet"
     />
   </head>
 
-  <body>
-    <main>
-      <header>
-        <div class="left-header roboto-bold">
-          <img src="/images/rido-logo.png" alt="Rido's logo" />
-          <h2>Rido Atmanto</h2>
+  <body class="flex justify-center items-center px-4 py-4 bg-[#E5E5E5]">
+    <main class="px-4 py-4 bg-white rounded-lg max-w-screen-lg">
+      <header class="grid grid-cols-2 gap-4 lg:pt-8 pt-4 lg:pb-12 pb-6">
+        <div class="lg:col-span-1 col-span-2 lg:text-left text-center">
+          <a href="/"
+            ><svg
+              alt="Rido's logo"
+              class="inline-block -mt-4 h-7 w-8 bg-[url('/images/rido-logo.svg')]"
+            ></svg>
+            <h1 class="text-3xl font-bold inline-block">Rido Atmanto</h1>
+          </a>
         </div>
-        <nav class="menu">
-          <ul>
-            <li><a href="/" class="roboto-bold">Home</a></li>
-            <li>
-              <a href="/portfolio" class="active roboto-bold">Portfolio</a>
+        <div class="lg:col-span-1 col-span-2 lg:pt-0 pt-4">
+          <ul class="flex lg:justify-end justify-center">
+            <li class="mr-1">
+              <a
+                href="/"
+                class="roboto-bold font-bold lg:px-8 px-4 lg:py-4 py-2 text-lg text-black bg-transparent hover:bg-black hover:text-slate-300"
+                >Home</a
+              >
             </li>
-            <li><a href="/contact" class="roboto-bold">Contact</a></li>
+            <li class="mr-1">
+              <a
+                href="/portfolio"
+                class="roboto-bold font-bold lg:px-8 px-4 lg:py-4 py-2 text-lg text-slate-300 bg-black hover:bg-white hover:text-[#D9D9D9]"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                href="/contact"
+                class="roboto-bold font-bold lg:px-8 px-4 lg:py-4 py-2 text-lg text-black bg-transparent hover:bg-black hover:text-slate-300"
+                >Contact</a
+              >
+            </li>
           </ul>
-        </nav>
+        </div>
       </header>
-      <div class="content roboto-regular">
-        <p class="page-title roboto-regular">
+
+      <div class="roboto-regular text-center mb-4">
+        <p class="roboto-regular lg:text-xl text-sm mb-8">
           I’ve build miscellaneous Web Application. Here some of it.
         </p>
-        <h2 class="page-header">My Portfolios</h2>
-        <div class="portfolio-container">
-          <div class="portfolio-item">
+        <h2 class="text-3xl mb-4 font-bold">My Portfolios</h2>
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
+          <div class="lg:col-span-1 col-span-1 mb-6">
             <img
-              src="/images/project-place-holder.png"
-              alt="project place holder"
+              class="w-1/2 inline-block mb-4"
+              src="/images/my-personal-website-home-page.png"
+              alt="Personal Website images"
             />
-            <p>Personal Website</p>
+            <a
+              class="block text-sky-400 hover:underline"
+              href="https://ridoatmanto.com"
+              target="_blank"
+              >Personal Website</a
+            >
+            <p class="lg:text-base text-sm">
+              Contain my CV and list of sample project history.
+            </p>
           </div>
-          <div class="portfolio-item">
+          <div class="lg:col-span-1 col-span-1 mb-6">
             <img
+              class="w-1/2 inline-block mb-4"
               src="/images/project-place-holder.png"
               alt="project place holder"
             />
-            <p>Address Book</p>
+            <p class="lg:text-base text-sm">Address Book</p>
           </div>
-          <div class="portfolio-item">
+          <div class="lg:col-span-1 col-span-1 mb-6">
             <img
+              class="w-1/2 inline-block mb-4"
               src="/images/project-place-holder.png"
               alt="project place holder"
             />
-            <p>Study or Productivity Tool</p>
+            <p class="lg:text-base text-sm">Study or Productivity Tool</p>
           </div>
-          <div class="portfolio-item">
+          <div class="lg:col-span-1 col-span-1 mb-6">
             <img
+              class="w-1/2 inline-block mb-4"
               src="/images/project-place-holder.png"
               alt="project place holder"
             />
-            <p>Encyclopedia or Information API</p>
+            <p class="lg:text-base text-sm">Encyclopedia or Information API</p>
           </div>
-          <div class="portfolio-item">
+          <div class="lg:col-span-1 col-span-1 mb-6">
             <img
+              class="w-1/2 inline-block mb-4"
               src="/images/project-place-holder.png"
               alt="project place holder"
             />
-            <p>Simple Ecommerce</p>
+            <p class="lg:text-base text-sm">Simple Ecommerce</p>
           </div>
         </div>
       </div>
-      <footer class="roboto-regular">
-        <a href="/" class="active roboto-bold">Home</a>
+      <footer
+        class="roboto-regular border-dashed border-t-2 pt-4 lg:text-left text-center text-[#464646]"
+      >
+        <a href="/" class="roboto-bold font-bold px-4 hover:underline">Home</a>
         <a
           href="https://t.me/ridoatmanto"
           target="_blank"
-          class="active roboto-bold"
+          class="active roboto-bold font-bold px-4 hover:underline"
           >Telegram</a
         >
         <a
           href="https://www.linkedin.com/in/rido-sandi-atmanto/"
           target="_blank"
-          class="roboto-bold"
+          class="roboto-bold font-bold px-4 hover:underline"
           >LinkedIn</a
         >
         <a
           href="https://github.com/ridoatmanto"
           target="_blank"
-          class="roboto-bold"
+          class="roboto-bold font-bold px-4 hover:underline"
           >Github</a
         >
-        <a href="/portfolio" class="roboto-bold">Portfolio</a>
-        <a href="/contact" class="roboto-bold">Contact</a>
-        <p>Rido Atmanto &copy; 2024</p>
+        <a href="/portfolio" class="roboto-bold font-bold px-4 hover:underline"
+          >Portfolio</a
+        >
+        <a href="/contact" class="roboto-bold font-bold px-4 hover:underline"
+          >Contact</a
+        >
+        <p class="inline-block lg:float-right px-4">Rido Atmanto &copy; 2024</p>
       </footer>
     </main>
   </body>

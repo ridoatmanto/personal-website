@@ -3,42 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Rido Atmanto</title>
+    <title>Rido Atmanto | Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;&display=swap"
       rel="stylesheet"
     />
   </head>
 
-  <body>
-    <main>
-      <header>
-        <div class="left-header roboto-bold">
-          <img src="/images/rido-logo.png" alt="Rido's logo" />
-          <h2>Rido Atmanto</h2>
+  <body class="flex justify-center items-center px-4 py-4 bg-[#E5E5E5]">
+    <main class="px-4 py-4 bg-white rounded-lg max-w-screen-lg">
+      <header class="grid grid-cols-2 gap-4 lg:pt-8 pt-4 lg:pb-12 pb-6">
+        <div class="lg:col-span-1 col-span-2 lg:text-left text-center">
+          <a href="/"
+            ><svg
+              alt="Rido's logo"
+              class="inline-block -mt-4 h-7 w-8 bg-[url('/images/rido-logo.svg')]"
+            ></svg>
+            <h1 class="text-3xl font-bold inline-block">Rido Atmanto</h1>
+          </a>
         </div>
-        <nav class="menu">
-          <ul>
-            <li><a href="/" class="roboto-bold">Home</a></li>
-            <li>
-              <a href="/portfolio" class="roboto-bold">Portfolio</a>
+        <div class="lg:col-span-1 col-span-2 lg:pt-0 pt-4">
+          <ul class="flex lg:justify-end justify-center">
+            <li class="mr-1">
+              <a
+                href="/"
+                class="roboto-bold font-bold lg:px-8 px-4 lg:py-4 py-2 text-lg text-slate-300 bg-black hover:bg-white hover:text-[#D9D9D9]"
+                >Home</a
+              >
             </li>
-            <li><a href="/contact" class="active roboto-bold">Contact</a></li>
+            <li class="mr-1">
+              <a
+                href="/portfolio"
+                class="roboto-bold font-bold lg:px-8 px-4 lg:py-4 py-2 text-lg text-black bg-transparent hover:bg-black hover:text-slate-300"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                href="/contact"
+                class="roboto-bold font-bold lg:px-8 px-4 lg:py-4 py-2 text-lg text-black bg-transparent hover:bg-black hover:text-slate-300"
+                >Contact</a
+              >
+            </li>
           </ul>
-        </nav>
+        </div>
       </header>
+
       <div class="content roboto-regular">
-        <p class="page-title roboto-regular">
+        <p class="roboto-regular lg:text-xl text-sm mb-8 text-center">
           Desire for doing any project, collaboration, or just say “Hi” with me?
           Don’t hesitate, write it down and just hit the button. Can’t wait to
           connect with you!
         </p>
-        <h2 class="page-header roboto-bold">Contact Me</h2>
-
-        <div class="contact-container roboto-medium">
+        <h2 class="text-3xl mb-4 font-bold text-center">Contact Me</h2>
+        <form action="" class="w-full w-max-sm lg:mb-12 mb-8 roboto-medium">
           <div class="contact-item">
             <p>Name</p>
           </div>
@@ -59,38 +81,44 @@
           </div>
           <div class="contact-item">&nbsp;</div>
           <div class="contact-item">
-            <input
-              class="contact-submit"
-              type="submit"
-              name="send_message"
-              value="Send Message"
-            />
+            <button
+              class="roboto-medium bg-[#D9D9D9] hover:bg-[#ccc] focus:shadow-outline focus:outline-none px-4 py-2 rounded"
+              type="button"
+            >
+              Send Message
+            </button>
           </div>
-        </div>
+        </form>
       </div>
-      <footer class="roboto-regular">
-        <a href="/" class="active roboto-bold">Home</a>
+      <footer
+        class="roboto-regular border-dashed border-t-2 pt-4 lg:text-left text-center text-[#464646]"
+      >
+        <a href="/" class="roboto-bold font-bold px-4 hover:underline">Home</a>
         <a
           href="https://t.me/ridoatmanto"
           target="_blank"
-          class="active roboto-bold"
+          class="active roboto-bold font-bold px-4 hover:underline"
           >Telegram</a
         >
         <a
           href="https://www.linkedin.com/in/rido-sandi-atmanto/"
           target="_blank"
-          class="roboto-bold"
+          class="roboto-bold font-bold px-4 hover:underline"
           >LinkedIn</a
         >
         <a
           href="https://github.com/ridoatmanto"
           target="_blank"
-          class="roboto-bold"
+          class="roboto-bold font-bold px-4 hover:underline"
           >Github</a
         >
-        <a href="/portfolio" class="roboto-bold">Portfolio</a>
-        <a href="/contact" class="roboto-bold">Contact</a>
-        <p>Rido Atmanto &copy; 2024</p>
+        <a href="/portfolio" class="roboto-bold font-bold px-4 hover:underline"
+          >Portfolio</a
+        >
+        <a href="/contact" class="roboto-bold font-bold px-4 hover:underline"
+          >Contact</a
+        >
+        <p class="inline-block lg:float-right px-4">Rido Atmanto &copy; 2024</p>
       </footer>
     </main>
   </body>
